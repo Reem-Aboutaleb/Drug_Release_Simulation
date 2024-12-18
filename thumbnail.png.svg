@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e6f2ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Molecular structure pattern -->
+    <pattern id="molecule-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="rgba(231, 76, 60, 0.2)"/>
+      <line x1="10" y1="10" x2="15" y2="15" stroke="rgba(231, 76, 60, 0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)"/>
+  
+  <!-- Molecular Background Layer -->
+  <rect width="400" height="300" fill="url(#molecule-pattern)" opacity="0.3"/>
+  
+  <!-- Main Microneedle Patch with Depth -->
+  <g transform="translate(100,80)">
+    <!-- Shadow Effect -->
+    <rect x="0" y="0" width="200" height="140" rx="15" ry="15" fill="rgba(0,0,0,0.1)" transform="translate(5,5)"/>
+    
+    <!-- Patch Body -->
+    <rect x="0" y="0" width="200" height="140" rx="15" ry="15" 
+          fill="#ffffff" stroke="#3498db" stroke-width="3" 
+          filter="url(#shadowFilter)"/>
+    
+    <!-- Detailed Microneedles -->
+    <g transform="translate(50,20)">
+      <path d="M0,0 L-10,-30 L10,-30 Z" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+      <rect x="-5" y="-30" width="10" height="40" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    </g>
+    <g transform="translate(100,30)">
+      <path d="M0,0 L-10,-40 L10,-40 Z" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+      <rect x="-5" y="-40" width="10" height="50" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    </g>
+    <g transform="translate(150,25)">
+      <path d="M0,0 L-10,-35 L10,-35 Z" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+      <rect x="-5" y="-35" width="10" height="45" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Drug Release Visualization -->
+  <g transform="translate(200,250)">
+    <path d="M-100,-20 Q0,-50 100,-20" 
+          fill="none" 
+          stroke="#2ecc71" 
+          stroke-width="3" 
+          stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="50" text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="24" 
+        font-weight="bold" 
+        fill="#2c3e50">
+    Molecular Drug Delivery
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="290" text-anchor="middle" 
+        font-family="Arial, sans-serif" 
+        font-size="14" 
+        fill="#34495e">
+    Advanced Release Simulation
+  </text>
+</svg>
