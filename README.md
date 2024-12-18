@@ -1,46 +1,28 @@
-# Drug Release Simulation
+# Project 1: Drug Release Simulation
 
 ## Overview
-This project simulates and compares drug release kinetics for first-order and zero-order models using Python. It is designed to study the dynamics of drug delivery systems, particularly relevant for microneedle technologies.
+This project simulates and compares drug release kinetics for first-order and zero-order models using Python. It aims to provide insights into drug delivery systems relevant to biomedical engineering, particularly in microneedle technology.
 
 ## Objectives
-- Visualize drug release profiles over time.
-- Analyze differences between burst release (first-order) and sustained release (zero-order).
+- Visualize and analyze drug release profiles over time.
+- Compare burst release (first-order) and sustained release (zero-order).
 
-## Models
-1. **First-Order Release**: Drug release rate decreases over time.
-   - Formula: `C(t) = C0 * e^(-kt)`
-2. **Zero-Order Release**: Drug releases at a constant rate.
-   - Formula: `C(t) = C0 - kt` (clipped to ensure non-negative values).
+## Key Features
+- Python-based simulation of drug release models.
+- Clear visualization of release kinetics with annotated graphs.
+- Demonstrates understanding of core drug delivery concepts.
+
+## Tools Used
+- **Programming Languages:** Python
+- **Libraries:** NumPy, Matplotlib
+- **Techniques:** Mathematical modeling, data visualization
 
 ## Results
-![Release Profiles](release_profiles.png)
+![Drug Release Profiles](release_profiles.png)
+- **First-Order Release:** Ideal for rapid drug delivery.
+- **Zero-Order Release:** Suitable for sustained, controlled release.
 
-- **First-Order Release**: Ideal for rapid drug delivery with an initial burst.
-- **Zero-Order Release**: Suitable for sustained, controlled delivery.
+## Repository Link
+[View Full Code on GitHub](https://github.com/YOUR_USERNAME/Drug_Release_Simulation)
 
-## Files
-- `drug_release_simulation.py`: Python script for the simulation.
-- `release_profiles.png`: Visualization of the release profiles.
-- `README.md`: Documentation of the project.
-
-## How to Run
-1. Install Python and required libraries:
-   ```bash
-   pip install numpy matplotlib
-   python drug_release_simulation.py
-
----
-
-### **Step 4: Push Everything to GitHub**
-If you’re familiar with GitHub CLI or Git commands, follow these steps:
-1. Open a terminal in your project folder.
-2. Initialize Git:
-   ```bash
-   git init
-git add .
-git commit -m "Initial commit: Drug release simulation"
-git remote add origin https://github.com/YOUR_USERNAME/Drug_Release_Simulation.git
-git branch -M main
-git push -u origin main
 
