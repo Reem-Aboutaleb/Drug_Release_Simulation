@@ -4,7 +4,7 @@ This project simulates and compares **drug release kinetics** using two fundamen
 
 ---
 
-![Drug Release Profiles](images/release_profiles.png)
+![Drug Release Profiles](images/thumbnail.png.svg)
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Reem-Aboutaleb/Drug_Release_Simulation/blob/main/drug_release_simulation.ipynb)
 
