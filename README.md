@@ -94,9 +94,6 @@ pip install numpy matplotlib
 ```bash
 python drug_release_simulation.py
 ```
-
-Or launch the notebook via [Google Colab](https://colab.research.google.com/github/Reem-Aboutaleb/Drug_Release_Simulation/blob/main/drug_release_simulation.ipynb)
-
 ---
 
 ## 🔭 Future Scope
